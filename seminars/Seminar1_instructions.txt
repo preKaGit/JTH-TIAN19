@@ -1,0 +1,22 @@
+Seminar 1 – Ethics in Cybersecurity research and practice
+
+Description
+-	Aims as introducing more about ethics in our field. 
+-	Ethical issues in two case studies
+
+Material (Case studies presented in the paper)
+-	University based development (What are we allowed to write. Are we allowed to suggest any kind of fields when we work in University)
+-	In the community of practicing cyber security experts (How we work with information security, how we manage ethical things)
+
+Preparations 
+-	Read paper by Macnish and Van der Ham (2020)
+-	Read ethics chapter in the course book. 
+
+Assignment
+	- Participate actively in the seminar (present, discuss and question)
+	- Submit a summary with key learning from each case from your perspective.
+	- 500 words summary, but divide the text into the 2 sections corresponding to each case. (What was most interesting?)
+	- include 2 questions
+
+Deadline 
+	- Before seminar (1 day before).

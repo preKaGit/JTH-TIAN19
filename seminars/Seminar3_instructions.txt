@@ -1,0 +1,31 @@
+Seminar 3 – Threats and Vulnerbilities
+
+Description
+-	Select a recent security breach features in the national or international press.	
+
+Material
+-	Ransomware (e.g. University of Dusseldorf September 10th)	
+-	Example in the slide
+
+Preparations 
+-	Read the material. 
+
+Assignment
+-	Based on the breach, identify: 
+		What type of breach was it?
+			- Describe the general type of attack.  
+		What was the vulnerbility? 
+			- Describe the general type of attack.
+		Describe the threat
+		What can/could be done?
+			- General/Specific
+-	Peers, contact Erik Bergström to get a peer.
+-	2-page report (excl. references) one day before the seminar.
+-	Use scientific references supporting your claims
+-	Use proper referencing (Peer reviewed references, Google-scholar, Primo..)
+-	Presentation + Questions = 10 min (7+3)
+		Use slides
+		Both group members are presenting
+	
+Deadline 
+	- Before seminar (1 day before).

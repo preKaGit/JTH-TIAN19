@@ -1,0 +1,38 @@
+Seminar 2 – Encryption
+
+Description
+-	We will discuss whether or not courts can order manufactures to help out unlocking cryptographically protected devices.
+-	E.g. mobile manufactures etc..
+-	Dilemma: We may want secret intelligence agencies to snoop for heavy criminality but should we be allowed 
+	to acecss strong encryption which may render lawful interception impossible.
+
+Material
+-	One of the most well-known: FBI-Apple encryption dispute. 
+- 	Departent of Justice (US) case.
+-	Facebook
+-	The Sun - "Facebook's changes to encrytion will only help terrorists and paedophiles"
+- 	End-to-end encryption
+
+Preparations 
+-	Read the known cases.
+
+Assignment
+- 	Individual assigment
+-	Participate actively in the seminar (present, discuss and question)
+-	Submit a report with key learning from each case from your perspective.
+-	1-page report taking a stance on:
+		1) Limiting the use of encryption for companies and individuals sp that law enforcement and intelligence agencies can get access to information.
+		2) Allowing companies and individuals to use any encryption they wish, regardless of the consequences.
+- 	Answer the questions: 
+		Should companies be able to read stored encrypted user data? 
+		Should companies answer legal law enforcement requests?
+		Should we have backdoors?
+		Should we limit automatic encrytions? 
+		If we don't encrypt, how can we safely store and transmit sensitive information?
+		Is it not my individual right to protect my (sensitive) information?
+- 	Use at least 5 scientific proper resources supporting your claims.
+-	Use proper referecning.
+-	Join a seminar group!
+	
+Deadline 
+	- Before seminar (1 day before).
