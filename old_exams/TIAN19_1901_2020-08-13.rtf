@@ -1,96 +1,105 @@
-{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1053{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 ArialMT;}{\f2\fnil\fcharset0 Arial-BoldMT;}}
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1053{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 ArialMT;}{\f2\fnil\fcharset0 Arial-BoldMT;}{\f3\fnil\fcharset2 Symbol;}}
 {\*\generator Riched20 10.0.18362}\viewkind4\uc1 
 \pard\sa200\sl276\slmult1\qc\b\f0\fs40\lang9 TIAN19_1901_2020-08-13\par
 
-\pard\sa200\sl276\slmult1\i\f1\fs32 What word would best describe how an intrusion detection system operates?\b0\i0\par
-Intrusion Detection Systems (IDSs) operates in a \ul proactive \ulnone manner. \par
+\pard\sa200\sl276\slmult1\i\f1\fs32 1. What word would best describe how an intrusion detection system operates? [IDS]\b0\i0\par
+Intrusion Detection Systems (IDSs) operates in a \ul proactive \ulnone manner. Unlike for example controls like firewalls, authentication and access control, that are preventive, an IDS complements with type of sensor that monitors and activity to identify malicious and suspicious events. It can be compared with a smoke detector which raises an alarm at specific occations. All IDSs has a response function which for example could alert a human who can decide what further actions that are needed. However, sometimes, an IDS goes into protection mode to isolate a suspected intruder and constrain access. Such a system is called an Intrusion Prevention System (IPS). So the IDS is a subset of the IPS.  \par
 
-\pard\b\i What could be considered a best mitigation practice for services that are not being used on devices?\par
+\pard\b\i 2. What could be considered a best mitigation practice for services that are not being used on devices? [Services]\par
+\par
 
-\pard\sa200\sl276\slmult1\f2 Select one alternative:\f1\par
-\b0\i0 The best mitigation practice for services that are not being used on devices are to \ul disable\ulnone  them. \par
+\pard\sa200\sl276\slmult1\b0\i0 The best mitigation practice for services that are not being used on devices are to \ul disable\ulnone  them. \par
 
-\pard\b\i What is the benefit of using a Virtual Private Network?\par
+\pard\b\i 3. What is the benefit of using a Virtual Private Network?\par
 
-\pard\sa200\sl276\slmult1\f2 Select one alternative:\par
+\pard\sa200\sl276\slmult1\f2 [VPNs]\par
 \b0\i0 The benefit of using a Virtual Private Network (VPN) is the \ul increased confidentiality\ulnone . The communication is encrypted, and it is not possible to extract where data was sent from (source). \par
 
-\pard\b\i\f1 Which alternative would provide the best countermeasure against an on-line attack (active authentication) against a username and a password?\par
+\pard\b\i\f1 4. Which alternative would provide the best countermeasure against an on-line attack (active authentication) against a username and a password? [Passwords]\par
+\f2\par
 
-\pard\sa200\sl276\slmult1\f2 Select one alternative:\par
-\ul\b0\i0 To use a strict limit on login failures\ulnone , for example a penalty which is increased for every login-attempt making the principle of a guessing (brute force) attack impossible.\par
+\pard\sa200\sl276\slmult1\ul\b0\i0 To use a strict limit on login failures\ulnone , for example a penalty which is increased for every login-attempt making the principle of a guessing (brute force) attack impossible.\par
 
-\pard\b\i\f1 Which of the following sentences describe the term asset best from an information security perspective?\par
+\pard\b\i\f1 5. Which of the following sentences describe the term asset best from an information security perspective?\par
 
-\pard\sa200\sl276\slmult1\f2 Select one alternative:\par
+\pard\sa200\sl276\slmult1\f2 [Assets]\par
 \b0\i0 The term "asset" is \ul anything than has value to the organization.\par
 
-\pard\ulnone\b\i\f1 Where in the information security model would an information security policy be placed?\par
+\pard\ulnone\b\i\f1 6. Where in the information security model would an information security policy be placed?\par
 
-\pard\sa200\sl276\slmult1\f2 Select one alternative:\par
+\pard\sa200\sl276\slmult1\f2 [Information Security Model]\par
 \b0\i0 An information security policy would be placed in the \ul administrative security\ulnone  within the information security model.\par
 
-\pard\b\i\f1 Access control is an essential aspect of information security. An operating system often manages the access control. Access control is often described using the terms: \f2 Note that there are more types than descriptions.\par
+\pard\b\i\f1 7. Access control is an essential aspect of information security. An operating system often manages the access control. Access control is often described using the terms: \f2 Note that there are more types than descriptions. [Access Control]\par
 \par
 \ul\b0\i0 Subjects\ulnone  are the entities than can access objects (often the human user). \par
 \ul Objects \ulnone are things on which an action can be performed such as, e.g., files, programs, and hardware devices. \par
 There are manu models for how to implement access control in practice, and one example is \ul Roled-based access control\ulnone .\par
 \par
-\b\i\f1 Which of the below-mentioned protocol(s) is susceptible to sniffing?\par
-\f2 Select one alternative:\par
-\b0\i0\par
-Sniffing is the practice of catching internet packets. This is done within the transport protocol and thus involves \ul TCP \ulnone & \ul UDP\ulnone  packets.\par
+\b\i\f1 8. Which of the below-mentioned protocol(s) is susceptible to sniffing? [Sniffing]\par
+\b0\i0\f2\par
+Sniffing is the practice of catching internet packets. This is done within the transport protocol and thus involves \ul TCP \ulnone & \ul UDP\ulnone  packets and \ul HTTP\ulnone  data segments. Sniffing is also called eavesdropping or wiretapping. It is performed by installing an application or hardware device to capture network packets (a sniffer). Using a sniffer, an attacker could capture email traffic (IMAP, SMTP), web traffic (HTTP), FTP (Telnet, SMB, NFS etc). A sniffer can display, watch and log traffic. \par
 \par
-\b\i\f1 What type of cryptographic algorithms are DES and 3DES?\par
-\f2 Select one alternative:\par
-\b0\i0\par
+Sniffing can be avoided by using safe, secure protocols such as HTTPS, Secure Socket Layers (SSH). If an insecure protocol must be used, all the data sent should be encrypted. If required, also a VPN can be used to secure access to users. \par
+\par
+\b\i\f1 9. What type of cryptographic algorithms are DES and 3DES? [Encryption]\par
+\b0\i0\f2\par
 The Data Encryption Standard (DES) is a \ul symmetric\ulnone  cryptosystem. DES was simply improved by enable double encryption (2DES) and tripple encryption (3DES) but are today considered unsecure. It is replaced by the other symmetric cryptosystem Advanced Encryption Standard (AES).\par
 \par
-\b\i\f1 According to the CIA Triad, which of the below-mentioned security aspects is considered in the triad?\par
-\f2 Select one alternative:\par
+\b\i\f1 10. According to the CIA Triad, which of the below-mentioned security aspects is considered in the triad?\par
+\f2 Select one alternative: [Security Aspects]\par
 \par
 \b0\i0 Out of Authenticity, Availability, Accountability and Auditability, \ul Availability\ulnone  is the one considered specifically in the CIA-triad. The other ones could be considered in other models.\par
 \par
-\b\i\f1 ___________ is a code injecting method used for attacking the database of a website.\par
+\b\i\f1 11. ___________ is a code injecting method used for attacking the database of a website. [Web Security]\par
 \b0\i0\par
 \ul SQL-injection \ulnone uses vulnerabilities in a webapplication's inputs, specifically the ones dealing with database calls / queries to create room to craft instructions to a database which was not the intention. \par
 \par
-\b\i Which of the following is not a wireless attack?\par
-\f2 Select one alternative:\par
+\b\i 12. Which of the following is not a wireless attack?\par
+\f2 Select one alternative: [Network Security]\par
 \b0\i0\par
 \ul Rootkit\ulnone  is not a wireless attack. It is often a more sophsticated kit which is implanted within the system root. A rootkit is often very hard for a system to detect since it has evaded a lot of security controls already to be able to be resident within an area which should only be allowed for privalaged processes. \par
 \par
-\b\i\f1 Assume you encounter a search box on a web page that can take an input of 200 characters. You insert 300 characters and the remote system crashes. \par
+\b\i\f1 13. Assume you encounter a search box on a web page that can take an input of 200 characters. You insert 300 characters and the remote system crashes. [Program Security]\par
 \par
 \b0\i0 Usually, this type of behaviour is because of limited \ul local memory\ulnone .\par
 \par
-\b Imagine you are using an internet service provider (ISP) who you don\rquote t trust. What could you use to hide your browsing activity?\par
-\f2 Select one alternative:\i\f1\par
+\b 14. Imagine you are using an internet service provider (ISP) who you don\rquote t trust. What could you use to hide your browsing activity? [General Information Security]\i\par
 \b0\par
 \i0 If you don't trust your Internet Service Provider (ISP), you can use a virtual private network. This was, they cannot track where you are sending any data, and where you are receiving any data from. The communication is encrypted. \par
 \par
-\b\i List at least three kinds of damage a company could suffer when the integrity of a program\par
-or company data is compromised.\f2\par
+\b\i 15. List at least three kinds of damage a company could suffer when the integrity of a program\par
+or company data is compromised. [Integrity]\f2\par
 \b0\i0\par
 If a program's or a company data's integrity is compromised, it may not be trusted, reliable or correct. This could result in damaging a companies reputation. It could also result in resource loss (time & cost) to analyse, find and fix the integrity issues. A program could easy become useless is the integrity of it cannot be assured / verified. \par
 \par
-\b\i\f1 Describe two examples of vulnerabilities of cars for which car manufacturers have\par
+\b\i\f1 16. Describe two examples of vulnerabilities of cars for which car manufacturers have\par
 instituted controls. Tell whether you think these controls are effective, somewhat effective,\par
-or ineffective. Motivate your answer.\f2\par
+or ineffective. Motivate your answer. [Practical Security]\f2\par
 \f1\par
 \b0\i0 The central lock may be one of the first practical security controls that were instituted for cars. It restricts a subject (any human) to access the object (the car) without the static security token (keys). It is effective for protective basic stuff inside the car, but if anyone really have the incentive to get into the car, they could just smash the window making it ineffective to secure valuable stuff inside the car. To make it even more secure, car manufactures and alarm manufactures implemented active alarms into the cars which would add a siren in case of an intrusion or intrusion attempt. This is more effective since it is dragging attention to the intrusion and stresses the intruders. \par
 \par
-\b\i\f2 Intrusion Detection System (IDS) & Intrusion Prevention System (IPS)\par
+\b\i\f2 17. Intrusion Detection System (IDS) & Intrusion Prevention System (IPS) [IDS & IPS]\par
 \b0\i0\par
-An IDS works proactively to detect an intrusion. It can do so by implementations built upon either patterns or hueristics. A IDS can be implemented either in a system, subsystem, network or subnetwork. \par
+An IDS works proactively to detect an intrusion and is subset of the IPS. A IDS can be implemented either in a system, subsystem, network or subnetwork. All IDSs has a response function on specific triggers which often could perform an action like calling a human to decide what furhter actions that are needed. If an IDS goes into protection mode and tries to isolate an intrudor and constrain its access, it is also an Intrudion Prevention System (IPS). \par
 \par
-IPS\par
+There 2 general types of Intrusion Detection Systems: \par
+- The Signature-based (Identifies intrusion by patterns) \par
+- The Anamoly-based (Identifies intrusion by hueristics)\par
 \par
-\b\i\f1 Describe three reasons why penetrate-and-patch is a misguided strategy.\f2\fs48\par
+An IDS could also be host-based or network-based. \par
+\par
+An IDS can be placed either at the front of a monitored subnetwork or on the inside of a subnetwork. The one in front monitors all traffic as it enters the network. The other one (the internal), monitors traffic within the network. \par
+\par
+To not make an IDS vulnerable to a DoS-attack, it runs in stealth mode. This means that is is using 2 network interfaces, one to monitor the traffic and another to communication with e.g. an alarm. The IDS works like a perfect passive wiretap. \par
+\par
+An Intrusion Prevention System can be configured to take action to block an attack or reduce its impact by: continue to monitor the network, block the attack, redirecting the traffic to a monitored host, or terminating the session, reconfiguring the network to bringing other hosts online (adjusting load balancers), adjusting performance (dropping some of the incoming traffic), deny access to certain hosts, shut down parts of the network, shut down the entire network. \par
+\par
+\b\i\f1 18. Describe three reasons why penetrate-and-patch is a misguided strategy. [Program Security]\f2\fs48\par
 \b0\i0\f1\fs32\par
-Penentrate-and-patch is a misguided strategy since it dodges the principle of security by design. It is based on a reactive approach where we act upon a fault, bug or security breach instead of thinking of it in advanced. A more preferred way to work is to identify threats, balance the risks and invest in preventive approach. A good argument is that it is harder to detect an error inside a system, thus preventing the error to get inside is a better measure. Patching may also be more expensive and infected systems also tend to be staging areas for other malware. \par
+Penentrate-and-patch is a misguided strategy since it dodges the principle of security by design. It is based on a reactive approach where we act upon a fault, bug or security breach instead of thinking of it in advanced. A more preferred way to work is to identify threats, balance the risks and invest in preventive approach. A good argument is that it is harder to detect an error inside a system, thus preventing the error to get inside is a better measure. Patching may also be more expensive and infected systems also tend to be staging areas for other malware. The main reason for that we should avoid penentrate & patching strategy is because the later a security flaw, bug or fault is found in a program or network, the more expensive it is to control it. The earlier it can be addressed in the information security development, the cheaper it is to address. Addressing security flaws during development instead of after a release is much cheaper. \par
 \par
-\b\i Consider a program that allows a surgeon in one city to assist in an operation on a patient in another city via an Internet connection. Who might want to attack the program? What types of harm might they want to cause? What kinds of vulnerabilities might they exploit to cause harm?\f2\par
+\b\i 19. Consider a program that allows a surgeon in one city to assist in an operation on a patient in another city via an Internet connection. Who might want to attack the program? What types of harm might they want to cause? What kinds of vulnerabilities might they exploit to cause harm? [General Information Security]\f2\par
 \f1\par
 \b0\i0 In this example, there are lifes at stake. A surgeon operation can be sensitive to time and require specific instructions and high quality imaginery or video material. \par
 \par
@@ -104,16 +113,15 @@ A service like this could be vulnerable to any attack. The program itself could 
 \par
 Eavesdropping can be controlled by implementing strong and strict firewalls both on server and on clients. It can be avoided using a virtual private network to hide sender and reciever aswell as encrypting the communication. Public Wireless networks shall be avoided. \par
 \par
-\b\i Explain the concept of salt, and exemplify how it can be used.\par
+\b\i 20. Explain the concept of salt, and exemplify how it can be used. [Passwords]\par
 \b0\i0\par
 When talking about a "salt" in context of encryption or hashing algorrithms and passwords, it is considered a uniquely generated component. This component is joined (in many cases just added) to the encoded component in order to make sure that no passwords / signatures does not result in the same encoding. This is a measure to make it even harder to decipher the main component. A "salt" component used correctly does also protect against password rainbow tables which is a precomputed table of popular PW's that can be used to speed up guessing attacks. Often, the salt is generated based on a clock or some other random mechanism. A salt is used as an additional input in one-way hash functions. To make it harder for an attacker to create a Rainbow table, a salt value should be long (since a short salt could be combined with all PW's in the table). \par
 \par
-\b\i List three reasons why people might be reluctant to use biometrics for authentication. Also give examples of how to counter those objections?\par
+\b\i 21. List three reasons why people might be reluctant to use biometrics for authentication. Also give examples of how to counter those objections? [Authentication]\par
 \b0\i0\par
 Biometrics is something that the user is. Examples recognition of face, ears, nose, other body shapes, voice, fingerprint, iris or retina. These are all examples of samples that are unique to you and thus private to you. These types of data shall remain private and confidential since they can be used to identify you. They must be stored safely. Since most biometrics are samples and a single-point-of-failure, it may not be entirely reliable either. It is also a data that may be valuable to many different kinds of attackers and thus a subject of fabrication. What happens if your biometric data is stolen? Then we may be very prone of taking damage during a identity theft and other more complex attacks. To convert to more biometrical authentication, I think that we must combine authentication and develop more secure processing, communication and storing of that kind of data. \par
 \par
-\b\i Define the terms: vulnerability, threat, harm and security controls. Also, relate the terms to each other by giving\par
-an applied example.\par
+\b\i 22. Define the terms: vulnerability, threat, harm and security controls. Also, relate the terms to each other by giving an applied example. [Information Security Terminology]\par
 \b0\i0  \par
 Vulnerability is a set of conditions that may be exploited to cause harm ( a weakness that can allow harm). \par
 \par
@@ -125,44 +133,62 @@ A security control is a measure which causing harm detered, deflected, detected,
 \par
 For example with the case of a pool of water (swimming pool) with water sensitive surrounding. The harm can be the damage given by water on the floor. The threat is a leakage in the pool, the water running out. A vulnerability could be a crack in the pool. A security control could be a piece of ducktape onto the crack, controlling the leakage. \par
 \par
-\b\i Are computer-to-computer authentications subject to the weakness of replay? Motivate why or why not.\par
+\b\i 23. Are computer-to-computer authentications subject to the weakness of replay? Motivate why or why not. [Authentication]\par
 \b0\i0\par
 First of all, what is a computer-to-computer authentication? Replay attack. Sniffing to achieve e.g. session data etc from a user.\par
 A replay attack is an attack where sniffed data is replayed to gain same oepration as a vicitim, e.g. by stealing cookie session data. A replay attack can be used to authenticate  an attacker with the vicitims data.  \par
 \par
 Computer-to-coputer authentications are fairly limited since a computer authentication is based on what the computer knows, that is, what is stored and computed. Stored data however could be located by unauthorized processes, and what one computer can computer, so can another..\par
 \par
-\par
-\par
-\b\i Describe by giving an applied example of how passwords are stored by the operating system of your personal computer?\par
+\b\i 24. Describe by giving an applied example of how passwords are stored by the operating system of your personal computer? [OS Security]\par
 \par
 \b0\i0 Passwords are hashed (and salted) with a one-way hash function and stored in special files only accessible to the Operating system itself and the root. The hash is performed with established and tested hash algorithms such as Message Digest (MDX) or Secure Hashing Algorithm (SHA).\par
 \par
-\b In the context of software security, such as OS security, eight design principles were formulated more than 40 years ago. Despite the relative age, they remain valid even today. Describe any four of these design principles.\par
+\b 25. In the context of software security, such as OS security, eight design principles were formulated more than 40 years ago. Despite the relative age, they remain valid even today. Describe any four of these design principles. [OS Security]\par
 \par
-\b0 Simplicity, keep the design simple results in easier analysis of flaws resulting in less flaws in design.\par
+\b0 Good design principles are good for security. Here follow a list that is essential in building a secure, solid and trusted operating system: \par
 \par
-Modular, divide the OS into several modules to reduce dependencies, complexity and attain protection between those. \par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\ul Enforcing of Least Privalege\ulnone\par
+
+\pard A policy that determines that a user should have as few privalege as possible (only to the projects that they are part of). \par
 \par
-Access Control, implement access control to determine who can access what in what ways. Default shall be set to a minimum. \par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\ul Economy of Design\ulnone\par
+
+\pard A simple design will lead to simplcity in analysis and therefore much less flaws introduced. \par
 \par
-Use virtualization (layers and abstractions) to make the design even more simple. Maintain protection and security between layers. \par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\ul Open Design\ulnone\par
+
+\pard Design should be open, established and tested. No system should depend on holding certain information secret. \par
 \par
-Least privalege\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\ul Complete Mediation\ulnone\par
+
+\pard Check and recheck all accesses everytime. \par
 \par
-Implicit access denial\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\ul Permission Based\ulnone\par
+
+\pard The default state for a user should be not to have access to any object at all. \par
 \par
-Complete mediation (check all accesses)\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\ul Separation of Privalege\ulnone\par
+
+\pard The essential part of the OS may have higher privalege, but user programs should have a significantly lower privalege. \par
 \par
-Open design (avoid dependecy of secrecy)\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\ul Least Common Mechanism\ulnone\par
+
+\pard Mechanisms used to access resources should not be shared. \par
 \par
-Seperation of privalege\par
-\par
-Least common mechanism\par
-\par
-Security should not make a resource more difficult to access\b\par
-\i\par
-\f2\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\ul Ease of Use\ulnone\par
+
+\pard Information security and security controls should not make it harder to use a function. \b\i\par
+
+\pard\f2\par
 \f0\fs22\par
 }
  
