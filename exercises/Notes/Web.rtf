@@ -1,0 +1,74 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1053{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\ul\b\i\f0\fs40\lang9 Web\highlight1\par
+
+\pard\sa200\sl276\slmult1\highlight0\ulnone\i0\fs28 Vulnerabilities\par
+\ul\b0 Input Check\par
+\ulnone If a user is allowed to insert data into some website. Developers must think of: What can a user with malicious intent come up with for input? These inputs and all other possible inputs that might cause failures must be checked against before processing any other information. If an input violates against any of the checks, we shall deny access or terminate the current process. If all inputs were checked correctly and the response were treated accordingly, we would spare many attacks and a lot of problems. Checking inputs can seem trivial but it is easy to forget, and it is easy to implement it incorrectly or miss a corner case or a normal case. \par
+\ul Database Query Check\par
+\ulnone To determine both how the database will behave and how the application beneath will behave in case of a faulty query. \par
+\ul Database Query Rules\par
+\ulnone It is important to set rules, who can perform what actions. If anyone can access anything, it is just a matter of time when a user manages to access the database and they can perform some input tricks and execute queries that can perform read, write, update and delete operations. Special cases must be checked against. For example, a normal user should not be allowed to query for all data or sensitive data. \ul\b\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0 Cross-site Scripting (XSS)\ul\b\par
+{\pntext\f1\'B7\tab}\ulnone\b0 Broken Authentication and Session Management\ul\b\par
+{\pntext\f1\'B7\tab}\ulnone\b0 Object references\ul\b\par
+{\pntext\f1\'B7\tab}\ulnone\b0 Security misconfiguration\ul\b\par
+{\pntext\f1\'B7\tab}\par
+
+\pard\sa200\sl276\slmult1\ulnone Exploits\ul\par
+Attacks\par
+\b0 SQL Injection\par
+\ulnone SQL injection is an attack whcih often exploits vulnerabilities in both database and the client-side input. First off it exploits user inputs which may not be sufficiently checked and sanitized. This way the input field allows the attacker some room to insert code. Depending on the situation, this room could cause errors in the front end but more dangerously, it could be manipulated to reach the database and cause even more trouble in the backend / database management side. If the database does not have input checks, integrity checks and query rules, it is not hard once room for input has been created to read, write, update or delete data from the database or at least cause problems in the database. SQL injections is a well-known exploit and has been leverages for many years. The name comes from the query language SQL which is used in most of todays legacy relational databases, but any database which does not provide rules and checks on the inputs may be a subject of such an attack. \par
+\ul Cross-site Scripting (XSS)\par
+\ulnone It means that a hacker can inject / insert scripts into a wegpage's or a webserver's response (output). This techniques can be performed directly on the victim's browser, on a webpage using the DOM or at the server. Cross-site scripts can be both reflective, DOM-based or stored. Cross-site scripting can be used to steal security tokens, session ID's or other credentials that can be used to authenticate a user. These attacks can enable other attacks. By inserting a script in users browser, webapplication or webserver can create a lot of possibilities for an attacked. It can be used to steal cookie data and other sensitive information. XSS can also be used to modify the contents of a website creating misleading information or enable for example clickjacking or driveby downloads. Leverages that the web is built upon scripting languages (JavaScript and Python). XXS can exploits many weaknesses in the web domain and scripting langauges and particular input fields. Scripts can be appended in an input and execute on the client-side, server-side. XSS can for example be used to insert malicious code in a clients browser, or execute malicious scripts on the client-side or server-side. In DOM-based XXS, the URL can be used to manipulate a website. To protect against this, one must control the possible URL and protect routes from executing scripts. A script may be used to steal information in cookies and can be sent to an attacker which can use this information to perform a session-hijacking (an attacker pretends to be a user for a session by authenticating with stolen session credentials and info).\par
+\ul Directory traversal / Dot-dot-slash\par
+\ulnone Can be used to elevate access, find other resources outside the web-root. This can be used in references or variables containing paths, URL's and code to change directory. This type of attack is exploiting unprotected files or directories that can be accessed by backtracking a path or an URL. If it is possible to manipulate e.g. a path or an URL string for the user, with the correct input or time, they might access information that they are ot intended to, even unauthorized. \par
+\ul Drive-by-Download\par
+\ulnone This attack exploits vulnerabilities in browser and on websites to download content in the background. A comprimised website can be configured to download content on the client's computer or on the client's browser. Most of the driveby downloads are protected against by not visiting any suspicious sites, and by keeping the browser, operating system, searching tool and protection up-to-date. Ultimately, it is a script which execute when visiting a site. This script may require that a client has a certain vulnerability to even perform the download. However, if many users are tricked into this site or if the attack is almost a zero-day exploit, it may hit a lot of targets due to the nature of humans and software patches. \par
+\ul Clickjacking\par
+\ulnone Clickjacking, or "redressing"  is about tricking a user into a certain input. It can for example be to reveal confidential information, redirect the user or force a download. A user might think that they are clicking buttons but in fact they are performing actions on an invisible page. Prevention can be added on e.g. Mozilla Firefox with the add-on NoScript. Mainly, clickjacking is prevented by not going to suspicious sites and not clicking on any suspicious links. It could be avoided with a good internet ethicket.\par
+\ul Website Defacement / Fake Website / Misleading Content\par
+\ulnone On a compromised website it may be easy to change the appearance. Also, linjected links on external websites and emails could direct a user to a fakewebsite where e.g. credentials is inserted but only stored by the attacker. Redirecting a user to other sites could also be used to fool the user into providing valuable information. \par
+\ul Man-in-the-Middle\par
+\ulnone The concept is used to describe an attacker which intercepts information between the target and its host. Both entities thinks that they are communicating directly with each other, but an attacker can intercept sensitive information and use it to their advantage. \par
+\ul Man-in-the-Browser\par
+\ulnone An attack targeting browsers which manipulates data between the browser and its security mechanisms. It is often installed as a proxy Trojan and use vulnerabilities in browser security to perform a MitM attack often to trace payment details and credentials. The user could think that a wasapplication has delays, but under the hood an attacker could try to authenticate to a website with the logged credentials and perform actions on behalf of the user. At a later stage, when the transaction or other details are catched by the attacker, the website could be loaded to the user again. A man in the browser may be resident like a browser extension, a browser itself or through malicious scripts in the browser. The difference between this attack and e.g. a webapplication attack is that the attacker is attacking your browser, this means that the there is nothing wrong with the webapplication but again, the browser is combining the information about what site you are visiting and some preprocessed information  and could result in an injected extra field for the password which send it directly to the attacker or logs other security tokens. \par
+\ul Page-in-the-Middle\par
+\ulnone An attack where a user is redirected to the wrong site, but answers to anther site using website defacement. For exampel to a bank, the user is trying to access a bank website. But, instead of accessing directly to the site, it is connected (redirected) to a sencond website defacing the views of the real one (and adds other malicious functions). This way, the user is accessed to both of the site, but the fake site is the one displayed and the information sent to the real website is controlled b an attacker. \par
+\ul Program Substitution\b\par
+\ulnone\b0 This attack is often used in combination with a website with desirable content. Users think that they are connected to a legite website with legite content, but instead of the desirable products stands a malicious program which is downloaded instead. The user thinks that the program is downloaded (and it might be) but malicious code is included. \ul\b\par
+Harm\par
+Security Controls (Prevention)\par
+\ulnone\b0 Consider all inputs as a threat. Sanitize data. User input escaping. Encode output data. Use right response headers. Content security Policy. \par
+A good security control to prevent man-in-the-middle attacks on the web is to use out-of-band comunication multi-factor authentication. \par
+\ul\b Targets\par
+\b0 Websites / Webservers\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone Injections\par
+{\pntext\f1\'B7\tab}Cross-site Scripting\par
+{\pntext\f1\'B7\tab}Access Control \par
+{\pntext\f1\'B7\tab}Authentication\par
+
+\pard\sa200\sl276\slmult1\ul Browsers\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone Man-in-the-Browser\par
+{\pntext\f1\'B7\tab}Page-in-the-Middle\ul\par
+{\pntext\f1\'B7\tab}\ulnone Keystroke Logger\ul\par
+{\pntext\f1\'B7\tab}\ulnone Download Substitutions\ul\par
+
+\pard\sa200\sl276\slmult1 Servers\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Injections\par
+{\pntext\f1\'B7\tab}Cross-site Scripting\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone Access Control \par
+{\pntext\f1\'B7\tab}Authentication\ul\par
+{\pntext\f1\'B7\tab}\ulnone Man-in-the-Middle\ul\par
+
+\pard\sa200\sl276\slmult1 Databases\ulnone\b\par
+\b0\fs22\par
+\par
+}
+ 
